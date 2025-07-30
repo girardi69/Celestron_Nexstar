@@ -1,0 +1,25 @@
+class NexstarCommand(Enum):
+    # All Nexstar commands start with a single ASCII character.
+    GET_POSITION_RA_DEC           = 'E' # 1.2+
+    GET_POSITION_RA_DEC_PRECISE   = 'e' # 1.6+
+    GET_POSITION_AZM_ALT          = 'Z' # 1.2+
+    GET_POSITION_AZM_ALT_PRECISE  = 'z' # 2.2+
+    GOTO_POSITION_RA_DEC          = 'R' # 1.2+
+    GOTO_POSITION_RA_DEC_PRECISE  = 'r' # 1.6+
+    GOTO_POSITION_AZM_ALT         = 'B' # 1.2+
+    GOTO_POSITION_AZM_ALT_PRECISE = 'b' # 2.2+
+    SYNC                          = 'S' # 4.10+
+    SYNC_PRECISE                  = 's' # 4.10+
+    GET_TRACKING_MODE             = 't' # 2.3+
+    SET_TRACKING_MODE             = 'T' # 1.6+
+    GET_LOCATION                  = 'w' # 2.3+
+    SET_LOCATION                  = 'W' # 2.3+
+    GET_TIME                      = 'h' # 2.3+
+    SET_TIME                      = 'H' # 2.3+
+    GET_VERSION                   = 'V' # 1.2+
+    GET_MODEL                     = 'm' # 2.2+
+    ECHO                          = 'K' # 1.2+
+    GET_ALIGNMENT_COMPLETE        = 'J' # 1.2+
+    GET_GOTO_IN_PROGRESS          = 'L' # 1.2+
+    CANCEL_GOTO                   = 'M' # 1.2+
+    PASSTHROUGH                   = 'P' # 1.6+ this includes slewing commands, 'get device version' commands, GPS commands, and RTC commands
