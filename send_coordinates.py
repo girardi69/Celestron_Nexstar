@@ -9,8 +9,8 @@ BAUD_RATE = 9600
 TIMEOUT = 2
 
 # Coordinate di esempio (Azimut: 180°, Altitudine: 45°)
-AZIMUTH_DEGREES = 170.0  # Azimut in gradi
-ALTITUDE_DEGREES = 43.0  # Altitudine in gradi
+AZIMUTH_DEGREES = 180.0  # Azimut in gradi
+ALTITUDE_DEGREES = 45.0  # Altitudine in gradi
 
 def connect_telescope(port, baudrate, timeout):
     """Connessione al telescopio Nexstar."""
