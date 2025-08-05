@@ -15,8 +15,8 @@ A directory of python programs to start using Nexstar
 - open powershell as administrator
 - run on WSL your favourite linux environment (mine is Ubuntu 24.04)
 - share from powershell the port to the linux environment:
-  usbipd list
-  usbipd bind --busid 1-1
+  usbipd list  
+  usbipd bind --busid 1-1  
   usbipd attach --wsl --busid 1-1  
 
 # Open the linux environment
